@@ -16,16 +16,19 @@ class MainPage extends React.Component {
           </h1>
           <div className={Main.container}>
             <div className={Main.buttonContainer}>
-              <button className={Main.button}>Testing </button>
+              <button className={Main.button}>About Me</button>
             </div>
             <div className={Main.buttonContainer}>
-              <button className={Main.button}>Testing </button>
+              <button className={Main.button}>Resume</button>
             </div>
             <div className={Main.buttonContainer}>
-              <button className={Main.button}>Testing </button>
+              <button className={Main.button}>Portfolio</button>
             </div>
             <div className={Main.buttonContainer}>
-              <button className={Main.button}>Testing </button>
+              <button className={Main.button}>Blog</button>
+            </div>
+            <div className={Main.buttonContainer}>
+              <button className={Main.button}>Contact</button>
             </div>
           </div>
           <marquee>
