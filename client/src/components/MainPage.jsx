@@ -11,7 +11,7 @@ class MainPage extends React.Component {
       <div>
         <h1>Hannah Sophie Holzmann's Official Website</h1>
         <marquee>
-          <h2 style={{ color: "#f442eb" }}> Hi mama! XOXO</h2>
+          <h2 style={{ color: "#f442eb" }}> Hi Mama and Daddy! XOXO</h2>
         </marquee>
       </div>
     );
