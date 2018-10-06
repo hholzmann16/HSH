@@ -11,6 +11,17 @@ var config = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "images/"
+            }
+          }
+        ]
+      },
+      {
         test: /\.jsx?/,
         include: APP_DIR,
         loader: "babel-loader",

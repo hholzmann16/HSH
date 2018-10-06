@@ -1,5 +1,9 @@
 import React from "react";
 import Main from "../../dist/main.css";
+import Nav from "../../dist/nav.css";
+import { Button } from "react-bootstrap";
+import Navbar from "./Navbar.jsx";
+import img from "../../assets/Hannah.jpg";
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -10,30 +14,12 @@ class MainPage extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <h1 className={Main.title}>
-            Hannah Sophie Holzmann's Official Website
-          </h1>
-          <div className={Main.container}>
-            <div className={Main.buttonContainer}>
-              <button className={Main.button}>About Me</button>
-            </div>
-            <div className={Main.buttonContainer}>
-              <button className={Main.button}>Resume</button>
-            </div>
-            <div className={Main.buttonContainer}>
-              <button className={Main.button}>Portfolio</button>
-            </div>
-            <div className={Main.buttonContainer}>
-              <button className={Main.button}>Blog</button>
-            </div>
-            <div className={Main.buttonContainer}>
-              <button className={Main.button}>Contact</button>
-            </div>
+        <div className={Nav.primary}>
+          <Navbar />
+          <div className={Main.banner} />
+          <div className="text-center">
+            <img src={img} className={`img rounded-circle ${Main.avatar}`} />
           </div>
-          <marquee>
-            <h2 style={{ color: "#f442eb" }}> Hello World</h2>
-          </marquee>
         </div>
       </div>
     );

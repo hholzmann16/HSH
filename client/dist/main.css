@@ -1,56 +1,11 @@
-.background {
-  background-color: #557fccfa;
+.banner {
+  background-image: url("../assets/Background.jpg");
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.title {
-  display: flex;
-  justify-content: center;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  color: #08011a;
-}
-.container {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  background-color: #24829e;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  background-color: #24829e;
-  margin: 1px;
-  padding: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  max-width: 140px;
-  min-width: 140px;
-  height: 60px;
-  padding-left: 6px;
-  padding-right: 6px;
-  box-sizing: border-box;
-}
-.button {
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  background-color: rgb(146, 214, 219);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 40px;
-  -webkit-appearance: none;
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  border-width: 1px;
-  border-color: transparent;
-  border-radius: 4px;
-  transition: opacity 0.2s ease 0s;
-}
-.button:hover {
-  opacity: 0.75;
+.avatar {
+  width: 200px;
+  height: auto;
 }
