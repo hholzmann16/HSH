@@ -14,7 +14,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div>
-        <div className={Nav.primary}>
+        <div>
           <Navbar />
           <div
             className={`d-flex align-items-center justify-content-center ${

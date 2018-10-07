@@ -10,6 +10,7 @@
     height: 200px;
   }
 }
+
 .avatar {
   width: 200px;
   height: auto;
@@ -22,7 +23,7 @@
 }
 .hannah {
   font-size: 10vw;
-  color: rgb(255, 201, 81);
+  color: #fafcff;
   font-family: "Parisienne", cursive;
-  text-shadow: 3px 3px 3px #000810;
+  text-shadow: 3px 3px 19px #1b1e21d4;
 }
