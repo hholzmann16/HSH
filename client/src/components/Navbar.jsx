@@ -26,10 +26,12 @@ class Navbar extends React.Component {
             </button>
           </div>
           <div
-            className="navbar-collapse collapse justify-content-center order-2"
-            id="collapsingNavbar"
+            className={`navbar-collapse collapse justify-content-center ${
+              Nav.boostflex
+            } order-2"
+            id="collapsingNavbar`}
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav w-100 nav-justified">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
                   Home <span className="sr-only">Home</span>
