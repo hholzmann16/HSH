@@ -13,8 +13,9 @@
 .avatar {
   width: 200px;
   height: auto;
+  margin-top: 30px;
 }
-@media only screen and (max-width: 1092px) {
+@media only screen and (max-width: 950px) {
   .avatar {
     width: 150px;
     height: auto;

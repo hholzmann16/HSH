@@ -15,7 +15,7 @@ class Navbar extends React.Component {
             Nav.primary
           }`}
         >
-          <div className="d-flex w-50 order-0">
+          <div className="d-flex order-0">
             <button
               className="navbar-toggler"
               type="button"
@@ -26,10 +26,8 @@ class Navbar extends React.Component {
             </button>
           </div>
           <div
-            className={`navbar-collapse collapse justify-content-center ${
-              Nav.boostflex
-            } order-2"
-            id="collapsingNavbar`}
+            className="navbar-collapse collapse justify-content-center w-100 order-1"
+            id="collapsingNavbar"
           >
             <ul className="navbar-nav w-100 nav-justified">
               <li className="nav-item active">
@@ -59,7 +57,6 @@ class Navbar extends React.Component {
               </li>
             </ul>
           </div>
-          <span className="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last" />
         </nav>
         <div className={Nav.container} />
       </div>
