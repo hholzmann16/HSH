@@ -5,7 +5,9 @@ import Main from "../../dist/main.css";
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      // page: home
+    };
   }
 
   render() {
