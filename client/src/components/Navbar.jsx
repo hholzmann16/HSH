@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../../dist/nav.css";
+import Main from "../../dist/main.css";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -59,6 +60,15 @@ class Navbar extends React.Component {
           </div>
         </nav>
         <div className={Nav.container} />
+        <div
+          className={`d-flex align-items-center justify-content-center ${
+            Main.banner
+          }`}
+        >
+          <h1 className={`text-center align-middle ${Main.hannah}`}>
+            Hannah Holzmann
+          </h1>
+        </div>
       </div>
     );
   }
