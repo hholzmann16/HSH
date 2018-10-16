@@ -11,13 +11,13 @@
   }
 }
 .avatar {
-  width: 200px;
+  width: 250px;
   height: auto;
   margin-top: 30px;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .avatar {
-    width: 150px;
+    width: 180px;
     height: auto;
   }
 }

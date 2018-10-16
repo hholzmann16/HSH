@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
-import ResumePage from "./ResumePage.jsx";
 import Portfolio from "./Portfolio.jsx";
 import Blog from "./Blog.jsx";
 import Contact from "./Contact.jsx";
@@ -16,7 +15,6 @@ function MainPage(props) {
             <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/resume" component={ResumePage} />
               <Route exact path="/portfolio" component={Portfolio} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/contact" component={Contact} />

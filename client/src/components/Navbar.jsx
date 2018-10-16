@@ -36,24 +36,19 @@ function Navbar(props) {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className={`nav-link ${Nav.linkColor}`} to="/resume">
-                Resume
+              <NavLink className={`nav-link ${Nav.linkColor}`} to="/portfolio">
+                Portfolio
               </NavLink>
             </li>
             <li className="nav-item">
-              <a className={`nav-link ${Nav.linkColor}`} href="#">
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className={`nav-link ${Nav.linkColor}`} href="#">
+              <NavLink className={`nav-link ${Nav.linkColor}`} to="/blog">
                 Blog
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className={`nav-link ${Nav.linkColor}`} href="#">
+              <NavLink className={`nav-link ${Nav.linkColor}`} to="/contact">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

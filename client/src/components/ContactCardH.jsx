@@ -24,7 +24,7 @@ function ContactCardH(props) {
         </a>
         <a
           className={Resume.contactSpacing}
-          href="mailto:hholzmann16@gmail.com"
+          href="mailto:hannah.s.holzmann@gmail.com"
           target="_blank"
         >
           Email

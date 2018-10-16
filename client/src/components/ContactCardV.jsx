@@ -34,7 +34,7 @@ function ContactCardV(props) {
         <li>
           <a
             className={Resume.contactList}
-            href="mailto:hholzmann16@gmail.com"
+            href="mailto:hannah.s.holzmann@gmail.com"
             target="_blank"
           >
             Email

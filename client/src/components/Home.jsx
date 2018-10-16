@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "../../dist/main.css";
 import img from "../../assets/Hannah.jpg";
-import DemoCarousel from "./DemoCarousel.jsx";
+import AboutMeCarousel from "./AboutMeCarousel.jsx";
 
 function Home(props) {
   return (
@@ -20,7 +20,7 @@ function Home(props) {
         </div>
       </div>
       <div>
-        <DemoCarousel />
+        <AboutMeCarousel />
       </div>
     </div>
   );
