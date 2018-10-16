@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "../../dist/nav.css";
 import Main from "../../dist/main.css";
+import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
-  console.log(props, "these are the nav props");
   return (
     <div>
       <nav
@@ -26,44 +26,32 @@ function Navbar(props) {
           id="collapsingNavbar"
         >
           <ul className="navbar-nav w-100 nav-justified">
-            <li
-              className={`nav-item ${props.current == "home" ? "active" : ""}`}
-            >
-              <a className="nav-link" href="#" onClick={props.homeClick}>
-                Home <span className="sr-only">Home</span>
-              </a>
+            <li className="nav-item">
+              <NavLink
+                exact={true}
+                className={`nav-link ${Nav.linkColor}`}
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
-            <li
-              className={`nav-item ${
-                props.current == "resume" ? "active" : ""
-              }`}
-            >
-              <a className="nav-link" href="#" onClick={props.resumeClick}>
+            <li className="nav-item">
+              <NavLink className={`nav-link ${Nav.linkColor}`} to="/resume">
                 Resume
-              </a>
+              </NavLink>
             </li>
-            <li
-              className={`nav-item ${
-                props.current == "portfolio" ? "active" : ""
-              }`}
-            >
-              <a className="nav-link" href="#" onClick={props.portfolioClick}>
+            <li className="nav-item">
+              <a className={`nav-link ${Nav.linkColor}`} href="#">
                 Portfolio
               </a>
             </li>
-            <li
-              className={`nav-item ${props.current == "blog" ? "active" : ""}`}
-            >
-              <a className="nav-link" href="#" onClick={props.blogClick}>
+            <li className="nav-item">
+              <a className={`nav-link ${Nav.linkColor}`} href="#">
                 Blog
               </a>
             </li>
-            <li
-              className={`nav-item ${
-                props.current == "contact" ? "active" : ""
-              }`}
-            >
-              <a className="nav-link" href="#" onClick={props.contactClick}>
+            <li className="nav-item">
+              <a className={`nav-link ${Nav.linkColor}`} href="#">
                 Contact
               </a>
             </li>

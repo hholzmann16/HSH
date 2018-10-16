@@ -15,15 +15,29 @@
   height: auto;
   margin-top: 30px;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 850px) {
   .avatar {
     width: 150px;
     height: auto;
   }
 }
 .hannah {
-  font-size: 10vw;
+  font-size: 11vw;
   color: #fafcff;
   font-family: "Parisienne", cursive;
   text-shadow: 3px 3px 19px #1b1e21d4;
+}
+.aboutMe {
+  font-family: "Poppins";
+  margin-top: 20px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 950px) {
+  .aboutMe {
+    font-size: 16px;
+  }
+}
+.homeCarousel {
+  max-width: 770px;
+  margin-top: 50px;
 }

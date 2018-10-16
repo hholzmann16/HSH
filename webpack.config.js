@@ -32,18 +32,36 @@ var config = {
       },
       {
         test: /\.css$/,
-        loader: "style-loader"
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              modules: true,
+              localIdentName: "[name]__[local]___[hash:base64:5]"
+            }
+          }
+        ]
       },
+      // {
+      //   test: /\.css$/,
+      //   loader: "css-loader",
+      //   query: {
+      //     modules: true,
+      //     localIdentName: "[name]__[local]___[hash:base64:5]"
+      //   }
+      // },
       {
-        test: /\.css$/,
-        loader: "css-loader",
-        query: {
-          modules: true,
-          localIdentName: "[name]__[local]___[hash:base64:5]"
-        }
+        test: /\.scss$/,
+        use: [
+          "style-loader", // creates style nodes from JS strings
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+        ]
       }
     ]
   },
+
   output: {
     path: BUILD_DIR,
     filename: "bundle.js"
