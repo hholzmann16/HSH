@@ -19,9 +19,7 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <div>
-        <AboutMeCarousel />
-      </div>
+      <div>{/* <AboutMeCarousel /> */}</div>
     </div>
   );
 }
