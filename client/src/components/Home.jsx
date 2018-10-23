@@ -18,8 +18,7 @@ function Home(props) {
             schema modeling.
           </div>
         </div>
-      </div>
-      <div>{/* <AboutMeCarousel /> */}</div>
+      <div>{<AboutMeCarousel />}</div>
     </div>
   );
 }
