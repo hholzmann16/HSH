@@ -14,11 +14,13 @@ function Home(props) {
             Angeles, CA.
           </div>
           <div>
-            I love all aspects of web development, from front-end design to
-            schema modeling.
+            I love all aspects of web development, from feature-rich user
+            experiences, to managing RESTful Node APIs for SQL and NoSQL
+            databases.
           </div>
         </div>
-      <div>{<AboutMeCarousel />}</div>
+        <div>{<AboutMeCarousel />}</div>
+      </div>
     </div>
   );
 }

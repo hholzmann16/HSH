@@ -5,6 +5,7 @@ services:
     container_name: HSH_app
     build:
       context: .
+    command: ./start.sh
     ports:
       - 6060:6060 # must match PORT env var
     environment:
