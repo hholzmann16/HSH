@@ -7,3 +7,15 @@
 .links {
   color: #3a7aa2 !important;
 }
+
+.avatar {
+  width: 250px;
+  height: auto;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 1250px) {
+  .avatar {
+    width: 180px;
+    height: auto;
+  }
+}

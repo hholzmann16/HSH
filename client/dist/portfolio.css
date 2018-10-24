@@ -7,6 +7,7 @@
 
 .skillList {
   list-style: none;
+  padding-left: 0;
 }
 .skillList > li {
   border: 1px solid #333;
@@ -54,4 +55,40 @@
   font-family: "Poppins";
   font-weight: bold;
   margin-right: 30px;
+}
+
+.line {
+  border-bottom: 4px solid black;
+  width: 92%;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.bumpSection {
+  padding-left: 12px;
+}
+
+.bullets {
+  list-style: none;
+}
+
+.bullets > li:before {
+  color: #0d3b79;
+  content: "\2727";
+  margin-left: -20px;
+  margin-right: 5px;
+}
+
+.bullets > li:hover:before {
+  content: "\2726";
+}
+
+.RPSimg {
+  width: 80%;
+  height: auto;
+}
+
+.SephoraImg {
+  width: 80%;
+  height: auto;
 }

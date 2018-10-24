@@ -1,21 +1,24 @@
 import React from "react";
 import img from "../../assets/Hannah.jpg";
-import Resume from "../../dist/resume.css";
-import Main from "../../dist/main.css";
+import PortStyle from "../../dist/portfolio.css";
+import ContactStyle from "../../dist/contactStyle.css";
 
-function ContactCardV(props) {
+function ContactCardDesktop(props) {
   return (
-    <div className={`${Resume.stickyPic} ${Resume.contactCard}`}>
+    <div className={`${PortStyle.stickyPic} ${PortStyle.contactCard}`}>
       <div>
-        <img src={img} className={`img rounded-circle ${Main.avatar}`} />
+        <img
+          src={img}
+          className={`img rounded-circle ${ContactStyle.avatar}`}
+        />
       </div>
       <div className="text-center align-middle">
         <h5>Contact</h5>
       </div>
-      <ul className={Resume.contactList}>
+      <ul className={PortStyle.contactList}>
         <li>
           <a
-            className={Resume.contactList}
+            className={PortStyle.contactList}
             href="https://www.linkedin.com/in/hannah-holzmann/"
             target="_blank"
           >
@@ -24,7 +27,7 @@ function ContactCardV(props) {
         </li>
         <li>
           <a
-            className={Resume.contactList}
+            className={PortStyle.contactList}
             href="https://github.com/hholzmann16"
             target="_blank"
           >
@@ -33,7 +36,7 @@ function ContactCardV(props) {
         </li>
         <li>
           <a
-            className={Resume.contactList}
+            className={PortStyle.contactList}
             href="mailto:hannah.s.holzmann@gmail.com"
             target="_blank"
           >
@@ -45,4 +48,4 @@ function ContactCardV(props) {
   );
 }
 
-export default ContactCardV;
+export default ContactCardDesktop;
