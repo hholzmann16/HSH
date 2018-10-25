@@ -107,7 +107,7 @@ function Portfolio(props) {
                   </a>
                 </h2>
                 <ul className={PortStyle.bullets}>
-                  <li>Sephora front-end recreation</li>
+                  <li>Designed and deployed Sephora's item description page</li>
                   <li>
                     Technologies used: React | Redux | Express | PostgreSQL |
                     AWS | Docker
