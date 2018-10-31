@@ -47,6 +47,7 @@ function Portfolio(props) {
                 <li>Docker</li>
                 <li>AWS</li>
                 <li>Webpack</li>
+                <li>TravisCI</li>
               </ul>
               <div className={PortStyle.line} />
             </div>
