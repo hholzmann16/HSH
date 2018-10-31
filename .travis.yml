@@ -1,18 +1,14 @@
 sudo: required
-
 language: bash
-
 services:
   - docker
-
 before_install:
+  - openssl aes-256-cbc -K $encrypted_c5dead397ab5_key -iv $encrypted_c5dead397ab5_iv
+    -in travis_deploy.enc -out ~/.ssh/travis_deploy -d
   - docker build -t $DOCKER_USERNAME/$APP_NAME:latest .
   - docker run -d -p 6060:6060 -e PORT=$PORT --name hsh_test $DOCKER_USERNAME/$APP_NAME
-
 script:
   - echo 1
-  # - docker exec hsh_test npm run test
-
 deploy:
   provider: script
   script: bash docker_push.sh
