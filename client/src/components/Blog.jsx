@@ -28,21 +28,24 @@ class Blog extends React.Component {
   }
 
   render() {
+    let blogRender = <p>No blogs at this time :)</p>;
+    if (this.state.blogPosts.length > 0) {
+      blogRender = this.state.blogPosts.map(entry => {
+        return (
+          <BlogEntry
+            title={entry.title}
+            summary={entry.summary}
+            id={entry.id}
+            key={entry.id}
+          />
+        );
+      });
+    }
+
     return (
       <div className="row">
         <div className="col">
-          <div>
-            {this.state.blogPosts.map(entry => {
-              return (
-                <BlogEntry
-                  title={entry.title}
-                  summary={entry.summary}
-                  id={entry.id}
-                  key={entry.id}
-                />
-              );
-            })}
-          </div>
+          <div>{blogRender}</div>
         </div>
       </div>
     );
