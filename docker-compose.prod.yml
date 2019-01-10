@@ -3,20 +3,15 @@ services:
   app:
     image: hholzmann16/hsh
     container_name: HSH_app
-    build:
-      context: .
-    # command: ./start.sh
     ports:
-      - 6060:6060 # must match PORT env var
+      - 3000:6060 # must match PORT env var
     environment:
       - PORT=6060
-      - DB_NAME=hsh_db
-      - DB_HOST=db
-      - DB_USER=root
-      - DB_PASS=root
-      - DB_PORT=3306
-    volumes:
-      - .:/app
+      - DB_NAME
+      - DB_HOST
+      - DB_USER
+      - DB_PASS
+      - DB_PORT
     links:
       - db
     depends_on:
@@ -28,8 +23,10 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=hsh_db
+      - MYSQL_ROOT_PASSWORD
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASS}
 
 volumes:
   db_data:

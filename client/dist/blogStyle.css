@@ -1,0 +1,9 @@
+.box {
+  width: 70vw;
+  border: 2px solid #7f7a7a;
+  margin: 25px;
+  list-style-type: none;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 10px #c7c1c1;
+  padding: 0px 10px 0px 10px;
+}

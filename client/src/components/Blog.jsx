@@ -1,14 +1,52 @@
 import React from "react";
-import Construction from "../../assets/ants.gif";
+import axios from "axios";
+import BlogEntry from "./BlogEntry.jsx";
 
-function Blog(props) {
-  return (
-    <div className="text-center">
-      <h1>Under Construction</h1>
-      <img style={{ maxWidth: "90vw" }} src={Construction} />
-      <p>Making sure it will be at least three times as big!</p>
-    </div>
-  );
+class Blog extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      blogPosts: []
+    };
+    this.getPosts = this.getPosts.bind(this);
+  }
+
+  componentDidMount() {
+    this.getPosts();
+  }
+
+  getPosts() {
+    axios
+      .get("/api/")
+      .then(res => {
+        const blogPosts = res.data;
+        this.setState({ blogPosts });
+      })
+      .catch(err => {
+        console.log("error receiving blog posts", err);
+      });
+  }
+
+  render() {
+    return (
+      <div className="row">
+        <div className="col">
+          <div>
+            {this.state.blogPosts.map(entry => {
+              return (
+                <BlogEntry
+                  title={entry.title}
+                  summary={entry.summary}
+                  id={entry.id}
+                  key={entry.id}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Blog;

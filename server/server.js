@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const router = require("./routers/blog_route.js");
 
 var app = express();
 
@@ -17,7 +18,8 @@ app.use(
     )
   )
 );
-app.get("*", function(req, res) {
+app.use("/api", router);
+app.get(/\/((?!api).)*/, function(req, res) {
   res.sendfile(path.resolve(__dirname, "../client/dist/index.html"));
 });
 
